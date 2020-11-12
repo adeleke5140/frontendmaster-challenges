@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  max-width: 1489px;
+}
+
+.intro {
+  background: url("../images/bg-pattern-top-mobile.svg") no-repeat;
+  background-position: top;
+  padding-bottom: 0;
+}
+.intro__title {
+  color: #502050;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.intro__subtitle {
+  color: #937b92;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 1em;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.review {
+  background: #f7f2f7;
+  padding: 1.5em 2em;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  color: #502050;
+  font-weight: 700;
+}
+.review .icons {
+  display: block;
+}
+.review .icons .fa-star {
+  margin-bottom: 0.4em;
+  color: #f9b008;
+}
+
+.intro__reviews {
+  padding-bottom: 0;
+}
+
+.container1 {
+  padding-top: 0;
+}
+
+.testimonial__item {
+  background: #502050;
+  color: white;
+  border-radius: 10px;
+  padding: 2em 2em;
+  margin-bottom: 1.5em;
+}
+.testimonial__item .contain {
+  background: url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.testimonial__item .contain h2 {
+  display: inline;
+  margin-left: 10%;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.testimonial__item .contain h2 span:first-child {
+  font-weight: 700;
+}
+.testimonial__item .contain h2 span:last-child {
+  color: #937b92;
+  font-weight: 500;
+}
+.testimonial__item p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #502050;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .intro {
+    background-position: left top;
+    display: grid;
+    grid-template-columns: 50% 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    margin-left: 5%;
+    margin-right: 7%;
+    padding-top: 7%;
+  }
+  .intro__content {
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .intro__title {
+    text-align: left;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    width: 100%;
+  }
+  .intro__subtitle {
+    text-align: left;
+    width: 80%;
+  }
+
+  .intro__reviews {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    position: relative;
+    left: -40px;
+  }
+  .intro__reviews .review {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    padding: 1.3em 2em;
+  }
+  .intro__reviews .review:nth-of-type(2) {
+    position: relative;
+    left: 15%;
+  }
+  .intro__reviews .review:nth-of-type(3) {
+    position: relative;
+    left: 30%;
+  }
+
+  .container1 {
+    margin: 0 7% 0 5%;
+  }
+
+  .testimonial__item {
+    margin-right: 2%;
+  }
+  .testimonial__item:nth-of-type(2) {
+    position: relative;
+    top: 30px;
+  }
+  .testimonial__item:nth-of-type(3) {
+    position: relative;
+    top: 60px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .intro {
+    background-position: left top;
+    display: grid;
+    grid-template-columns: 50% 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 3em;
+    margin-left: 5%;
+    margin-right: 7%;
+    padding-top: 7%;
+  }
+  .intro__content {
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .intro__title {
+    text-align: left;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    width: 80%;
+  }
+  .intro__subtitle {
+    text-align: left;
+    width: 80%;
+  }
+
+  .intro__reviews {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+  .intro__reviews .review {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 1.3em 2em;
+  }
+  .intro__reviews .review:nth-of-type(2) {
+    position: relative;
+    left: 15%;
+  }
+  .intro__reviews .review:nth-of-type(3) {
+    position: relative;
+    left: 30%;
+  }
+
+  .container1 {
+    margin: 0 3.5% 0 6%;
+  }
+
+  .testimonial__item {
+    margin-right: 2%;
+  }
+  .testimonial__item:nth-of-type(2) {
+    position: relative;
+    top: 30px;
+  }
+  .testimonial__item:nth-of-type(3) {
+    position: relative;
+    top: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

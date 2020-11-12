@@ -1,0 +1,227 @@
+@import "_reset.scss";
+@import "_variables.scss" ;
+@import "_mixins.scss";
+//@import "_media.scss";
+
+
+body {
+    font-family: $primary-font;
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+//media queries
+@media (max-width:600px) {
+    body{
+    background-image: url('../images/bg-mobile.png');
+    }
+}
+
+@media (min-width:600px) and (max-width:1440px){
+    body{
+        background-image: url('../images/bg-desktop.png');
+        background-size:auto;
+        background-position: bottom;
+        background-color: $tertiary-color;
+    }
+}
+// end of media queries section
+
+
+
+.main-container {
+   @include main-container (300px,500px,green);
+}
+
+.container1 {
+    @include container1();
+        img{
+            position: absolute;
+            left: 30px;
+            top:  20%;
+
+        }
+
+        .small-icons {
+            width: 200px;
+            height:100px;
+            position: relative;
+            top: 50%;
+                img.file-logo1{
+                    @include icons-bg(12px,8px,$tertiary-color);
+                    height:40px;
+                    left:30px;
+                }
+                img.file-logo2{
+                    @include icons-bg(12px,8px,$tertiary-color);
+                    left:45%;
+                    height:40px;
+                }
+                img.file-logo3{
+                    @include icons-bg(12px,8px,$tertiary-color);
+                    left: 9.7em;
+                }
+
+        }
+}
+
+
+
+.content {
+    @include container2-content($secondary-color2,300px,200px,1rem,15px,relative);
+        .major-text{
+            @include text-styles;
+        }
+}
+
+.container2{
+    position: relative;
+    bottom: $bottom-nbsp;
+    .area2{
+        position: absolute;
+        width: 280px;
+        bottom: 7em;
+        right: 8px; 
+            .progress-bar{
+                width:100%;
+                height:1em;
+                border: 2px solid $secondary-color3;
+                background: $secondary-color3;
+                border-radius: 20px;
+                    .box{
+                        height: 0.75em;
+                        width: 75%;
+                        background:linear-gradient(.25turn, hsl(6, 100%, 80%) , 60%, hsl(335, 100%, 65%) ) ;
+                        border-radius: inherit;     
+                            .ball{
+                                width: .6em;
+                                background: $primary-color;
+                                height:inherit;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 12.35em;
+                                height: .6em;
+                                top: 3px;
+                            }
+                    }
+            }          
+    }
+}
+
+.bar-text{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-top: 1em;
+    font : {
+        family: $primary-font;
+        size: 1rem;
+        weight:bold;
+    }
+    color: $primary-color;
+}
+
+.container3 {
+    position: relative;
+    background: #fbfbfb;
+    width:200px;
+    height:80px;
+    border-radius: 10px;
+    bottom: 6em;
+    left:16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .text3{
+            text-transform: uppercase;
+            padding:1em;
+            color: $secondary-color2;
+                .left{
+                    font-size: 2.9rem;
+                    color: $tertiary-color;
+                    font-weight: 600;
+                }
+                .left2{
+                    font-weight: bold;
+                    //font-size:0.75rem;
+                    position:relative;
+                    color: $secondary-color;
+                    bottom:7px;
+                    left:2px;
+                }
+
+        }
+}
+
+//media queries for desktop layout
+
+@media only screen and (min-width:992px) and (max-width:1440px){
+
+    .container1 {
+        bottom: -20em;
+        top:-2em;
+        left:-18em;
+    }
+
+    .container2{
+        bottom: 15.7em;
+        width: 200px;
+            .content {
+                width: 550px;
+                height: 10em;
+                top: 2.5em;
+                left: 2em;
+                    .major-text {
+                        position: absolute;
+                        top: 2rem;
+                        text-align: left;
+                        left: 2em;
+                    }
+            }
+            .area2 {
+                position: absolute;
+                width: 500px;
+                bottom: 2em;
+                left: 4em;
+                    .progress-bar{
+                        padding: 0 0.5em;
+                            .box{
+                                //height: 0.7em;
+                                width:80%;
+                                position: relative;
+                                left: -8px;
+                                bottom: 0.2px;
+                                    .ball{
+                                        top:1.34px;
+                                        left: 23.3em;
+                                    }
+                            }
+                    }
+            }
+    }
+
+
+    .container3 {
+        bottom:26.5em;
+        left:22em;
+    }
+
+    .left2{
+        font-size:0.75rem;
+    }
+
+    .container4 {
+        border-top: 40px solid #fbfbfb;
+        border-left: 40px solid transparent;
+        height:0;
+        width:0;
+        position:absolute;
+        bottom: 24.8em;
+        left:32em;
+        
+      }
+}
+
+
+

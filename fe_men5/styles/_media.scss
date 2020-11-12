@@ -1,0 +1,130 @@
+@media only screen and (min-width:767px){
+    nav img{
+      height: 50px;
+    }
+    nav > button.register{
+      padding: 1em 5em;
+      margin-right: 5%;
+    }
+
+    section.header-text {
+      flex-direction: row;
+      margin-left: 4%;
+      padding-bottom: 3em;
+
+      .title,.subtitle{
+        text-align: left;
+        margin: 0;
+      }
+
+      .title {
+        width: 70%;
+        margin-bottom: 1em;
+        line-height: 1.6;
+        font-size: 2.5rem;
+        
+      }
+
+      .subtitle{
+        width: 66%;
+        @include fw-normal;
+        font-size:1rem;
+      }
+
+      .img1 {
+        max-width:100%;
+        width: 600px;
+        height:400px;
+        float: right;
+        margin: 0;
+        padding-right: 5%;
+      }
+
+      button.get-started {
+        justify-self: flex-start;
+        margin:0;
+        padding: 1em 2em;
+        margin-top: 1.5em;
+        @include fw-normal;
+      }
+
+    }
+    main {
+      padding-top: 5em;
+      background: #f6f6f6;
+      margin-top: 0;
+    }
+
+    main .card {
+      display: flex;
+      align-items: center;
+      box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+      padding:3em 5em;
+    }
+
+    .card  .card__img {
+      width: 400px;
+      order: 1;
+    }
+
+    .card .card__desc {
+      width: 60%;
+    }
+
+    section.card--float {
+      width:50%;
+      padding:3em 3em;
+      top:100px;
+    }
+
+    section.card--float .card--float__title{
+        font-size: 1.7rem;
+        @include fw-bold;
+        color: $n-color2;
+    } 
+
+    section.card--float .card--float__btn {
+      width:350px;
+      padding: 2em 4em;
+      border-radius: 40px;
+      box-shadow: 4px 4px 6px #f6f6f6;
+    }
+
+    footer {
+      padding: 10em 5em 0 5em;
+      display: grid;
+      grid-template-columns:2fr 1fr 1fr;
+
+    }
+
+    .links, .contact__desc, .text{
+      font-size: 1rem;
+    }
+
+    .attribution11{
+      font-size: 0.6rem;
+    }
+
+    p.contact__desc {
+      width:70%;
+      font-size: 1rem;
+    }
+    .location-icon {
+      width:30px;
+    }
+
+    .social-media-links{
+      display: flex;
+      margin-bottom: 12em;
+      justify-content: center;
+      
+      i{
+        display: inline-block;
+        margin-right: 5%;
+        border: 1px solid #fff;
+        border-radius:50%;
+        padding: .5em;
+        
+      }
+    }
+}

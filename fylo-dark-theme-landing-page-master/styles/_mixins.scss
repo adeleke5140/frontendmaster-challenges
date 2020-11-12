@@ -1,0 +1,17 @@
+@mixin fw-bold {
+    font-weight: map-get($map: $font-weights, $key:'bold' );
+}
+
+@mixin fw-normal {
+    font-weight: map-get($map: $font-weights, $key:'normal' );
+}
+
+@mixin input-field{
+	border:none;
+	border-radius:30px;
+	width:270px;
+	display: block;
+	margin: 0 auto;
+	padding: 1em 1.8em;
+	
+}

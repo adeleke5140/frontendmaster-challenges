@@ -1,0 +1,185 @@
+@media only screen and (min-width:767px) and (max-width:1440px){
+    header{
+        justify-content: space-between;
+        img {
+            height: 30px;
+            margin-left: $margin;
+        }
+        nav{
+            li {
+                margin-right: 3em;
+                a{
+                    background: linear-gradient(to bottom, $a-color1 0%, $a-color1 100%);
+                    background-position: 0 100%;
+                    background-repeat: repeat-x;
+                    background-size: 2px 2px;
+                    transition: background-size .2s;
+                    &:hover{
+                        background-size: 2px 25px;
+                        color: $n-color1;
+                        @include fw-bold;
+                        padding: .1em;
+                        letter-spacing: 0.1em;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .intro{
+        display: grid;
+        margin-left: $margin;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        margin-top:7em;
+        img{
+            grid-column: 2/3;
+            width:80%;
+            margin-left: 5em;
+        }
+        .intro__title{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            
+            h1{
+                font-size: 1.5rem;
+                line-height: 1.6;
+                margin-bottom: 2em;
+                @include left-align;
+            }
+            p{
+                @include left-align;
+            }
+            form{
+                flex-direction: row;
+                input[type="text"]{
+                    margin-right: 4%;
+                    padding-top:1.2em;
+                }
+                input[type="submit"]{
+                    width: 50%;
+                    margin-top: 0;
+                    &:hover{
+                        @include btn_hover
+                    }
+                }
+            }
+        }
+
+    }
+
+    //main section styles
+    .product-info{
+        background:$n-color1;
+        //background: url('../images/bg-curve-desktop.svg') no-repeat $n-color1;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        
+        img.product-info__svg{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            width: 80%;
+            position: relative;
+            bottom: 12em;
+        }
+        .product-info__title{
+            grid-column: 1/2;
+            display: flex;
+            flex-direction: column;
+            margin-left:$margin;
+            h3{
+                @include left-align;
+                font-size: 1.5rem;
+            }
+            p{
+                @include left-align;
+                font-size: .9rem;
+            }
+        }
+        .testimonial{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background: #fff;
+            width: 60%;
+            margin-left: 4em;
+            padding-top: 2em;
+            height: 250px;
+            box-shadow: 2px 5px 7px #e3dfdf;
+            img{
+                margin-left: 0;
+            }
+            p{
+                left: -40px;
+                bottom:12px;
+            }
+        }
+
+    }
+
+    .product-access {
+        margin-top: 0;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:5em;
+        padding-left: 0;
+        .product-access__title{
+            margin-left: $margin;
+            h3{
+                text-align: left;
+                font-size: 1.5rem;
+            }
+            p{
+                text-align: left;
+                font-size: .9rem;
+                width: 80%;
+                margin-left: 0px;
+            }
+
+        }
+        form{
+            margin-top: 2em;
+        }
+        input[type="submit"]{
+            width: 40%;
+            
+            &:hover {
+                @include btn_hover;
+            }
+            
+        }
+    }
+    
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        padding-top: 2em;
+        .footer-subsection1{
+            grid-column: 1;
+
+            .fylo-icon{
+                margin-bottom: 1.5em;
+            }
+
+        }
+        .footer-subsection2{
+            grid-column: 2/3;
+            @include grid_align(relative,4.5em);
+        }
+        .footer-subsection3{
+            grid-column: 3/4;
+            @include grid_align(relative,7em);
+        }
+        p.attribution{
+            @include grid_align(relative,0em);
+            left: -7em;
+            top: 1em;
+            grid-row:3;
+            grid-column: 2;
+        }
+    }
+
+}

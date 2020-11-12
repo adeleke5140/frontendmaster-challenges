@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@use '_variables.scss' as *;
+body {
+  font-family: "Raleway", sans-serif;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url("../images/bg-mobile.png");
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1440px) {
+  body {
+    background-image: url("../images/bg-desktop.png");
+    background-size: auto;
+    background-position: bottom;
+    background-color: #0c122c;
+  }
+}
+
+.main-container {
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-bottom: -50%;
+  margin-right: -50%;
+}
+
+.container1 {
+  height: 220px;
+  width: 300px;
+  background-color: #1d2c67;
+  display: inline-block;
+  margin-top: 60%;
+  border: none;
+  border-radius: 15px 50% 15px 15px;
+  position: relative;
+  bottom: 50px;
+}
+
+.container1 img {
+  position: absolute;
+  left: 30px;
+  top: 20%;
+}
+
+.container1 .small-icons {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 50%;
+}
+
+.container1 .small-icons img.file-logo1 {
+  position: absolute;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0c122c;
+  height: 40px;
+  left: 30px;
+}
+
+.container1 .small-icons img.file-logo2 {
+  position: absolute;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0c122c;
+  left: 45%;
+  height: 40px;
+}
+
+.container1 .small-icons img.file-logo3 {
+  position: absolute;
+  padding: 12px;
+  border-radius: 8px;
+  background: #0c122c;
+  left: 9.7em;
+}
+
+.content {
+  background-color: #1d2c67;
+  width: 300px;
+  height: 200px;
+  margin-top: 1rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+.content .major-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #848794;
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+}
+
+.content .major-text .data {
+  color: #dddbff;
+  font-weight: bold;
+}
+
+.container2 {
+  position: relative;
+  bottom: 50px;
+}
+
+.container2 .area2 {
+  position: absolute;
+  width: 280px;
+  bottom: 7em;
+  right: 8px;
+}
+
+.container2 .area2 .progress-bar {
+  width: 100%;
+  height: 1em;
+  border: 2px solid #122052;
+  background: #122052;
+  border-radius: 20px;
+}
+
+.container2 .area2 .progress-bar .box {
+  height: 0.75em;
+  width: 75%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), color-stop(60%), to(#ff4d97));
+  background: linear-gradient(0.25turn, #ffa399, 60%, #ff4d97);
+  border-radius: inherit;
+}
+
+.container2 .area2 .progress-bar .box .ball {
+  width: .6em;
+  background: #dddbff;
+  height: inherit;
+  border-radius: 50%;
+  position: absolute;
+  left: 12.35em;
+  height: .6em;
+  top: 3px;
+}
+
+.bar-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #dddbff;
+}
+
+.container3 {
+  position: relative;
+  background: #fbfbfb;
+  width: 200px;
+  height: 80px;
+  border-radius: 10px;
+  bottom: 6em;
+  left: 16%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container3 .text3 {
+  text-transform: uppercase;
+  padding: 1em;
+  color: #1d2c67;
+}
+
+.container3 .text3 .left {
+  font-size: 2.9rem;
+  color: #0c122c;
+  font-weight: 600;
+}
+
+.container3 .text3 .left2 {
+  font-weight: bold;
+  position: relative;
+  color: #848794;
+  bottom: 7px;
+  left: 2px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {
+  .container1 {
+    bottom: -20em;
+    top: -2em;
+    left: -18em;
+  }
+  .container2 {
+    bottom: 15.7em;
+    width: 200px;
+  }
+  .container2 .content {
+    width: 550px;
+    height: 10em;
+    top: 2.5em;
+    left: 2em;
+  }
+  .container2 .content .major-text {
+    position: absolute;
+    top: 2rem;
+    text-align: left;
+    left: 2em;
+  }
+  .container2 .area2 {
+    position: absolute;
+    width: 500px;
+    bottom: 2em;
+    left: 4em;
+  }
+  .container2 .area2 .progress-bar {
+    padding: 0 0.5em;
+  }
+  .container2 .area2 .progress-bar .box {
+    width: 80%;
+    position: relative;
+    left: -8px;
+    bottom: 0.2px;
+  }
+  .container2 .area2 .progress-bar .box .ball {
+    top: 1.34px;
+    left: 23.3em;
+  }
+  .container3 {
+    bottom: 26.5em;
+    left: 22em;
+  }
+  .left2 {
+    font-size: 0.75rem;
+  }
+  .container4 {
+    border-top: 40px solid #fbfbfb;
+    border-left: 40px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 24.8em;
+    left: 32em;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

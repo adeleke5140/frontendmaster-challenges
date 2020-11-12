@@ -1,0 +1,86 @@
+body{
+    font-size: $font-size;
+    font-family: $font-family2;
+    //max-width:1024px;
+}
+
+header{
+  
+    background-position: center center;
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-color:$n-color1;
+    nav{
+        display:flex;
+        justify-content: space-between;
+        padding-top:2em;
+        align-items: center;
+        margin-bottom: 5em;
+        img{
+            height:20px;
+            margin-left:4%;
+        }
+
+        .register{
+            margin-right: 4%;
+            border:none;
+            background:#fff;
+            padding: .5em 2em;
+            border-radius: 5em;
+            @include fw-bold;
+            box-shadow: 2px 2px 4px #d3dce4;
+            transition: all 0.5s;
+            
+            
+        }
+    }
+
+    .header-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        h1{
+            margin:0 auto;
+            text-align: center;
+            @include fw-bold;
+            line-height: 1.4;
+            width:90%;
+            margin-bottom: .8em;
+            color:$n-color2;
+            font-size: 1.8rem;
+            font-family: $font-family1;
+        }
+        p{
+            color:$n-color2;
+            margin: 0 auto;
+            line-height: 1.4;
+            text-align: center;
+            @include fw-normal;
+            width:90%;
+            font-size: 1.2rem;
+            margin-bottom: 1.4em;
+
+        }
+        .get-started{
+            border:none;
+            background:$p-color;
+            padding: 1.2em 4em;
+            border-radius:3em;
+            font-size: 1rem;
+            color:$n-color1;
+            @include fw-bold;
+            text-align: center;
+            margin-left:10%;
+            width: 80%;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            margin: 3em 5% 0 5%;
+        }
+    }
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+}
