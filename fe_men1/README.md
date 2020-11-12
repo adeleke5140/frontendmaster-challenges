@@ -9,7 +9,9 @@ The mobile version below is optimized for small screens. This was my very first 
 
 <img src="https://github.com/adeleke5140/FYLO/blob/117d1559876f62ee5ac6a8c959b70ec7284fb4c1/mobile-view.png" alt="mobile version">
 
-## Web Version
-Here's the web version
+## Desktop Version
+Here's desktop version 
+
+![desktop version](webversionfylo.jpg)
 
 
