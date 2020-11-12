@@ -1,10 +1,8 @@
 # Four card front-end mentor challenge
 
+This was a very exciting challenge. I used the CSS grid to position the cards. It helped solidified the knowledge I had gained.
+
 ## Desktop Preview
 ![Design preview for the four card section](./screenshot/desktop-preview.png)
 
-
-<h2>Mobile Preview</h2>
-<img src="screenshot/four4-card.netlify.app_(iPhone X).png">
-
-Other challenges can be founf at <a href="frontendmentor.com">frontendmentor</a>
+Here's the [Live Preview](https://grid-card.netlify.app/)
